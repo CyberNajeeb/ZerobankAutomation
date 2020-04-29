@@ -1,0 +1,280 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3024000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.StepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-28T10:32:34.945Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10046293000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Valid login credentials",
+        "description": "",
+        "id": "login-test;valid-login-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 134875000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4387805000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user logs in with valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20788000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Account summary page should be displayed.",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.StepDefinitions.account_summary_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@validLogin"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2960000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.StepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-28T10:32:49.690Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7720484000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Invalid login credentials",
+        "description": "",
+        "id": "login-test;invalid-login-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 161281000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3659213000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user logs in with invalid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.StepDefinitions.user_logs_in_with_invalid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 875000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Login password are wrong message should be displayed",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.StepDefinitions.login_password_are_wrong_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalidLogin"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2397000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.StepDefinitions.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-28T10:33:01.245Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6624017000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "No login credentials",
+        "description": "",
+        "id": "login-test;no-login-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 150410000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3521882000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user logs in with no login credentials",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.StepDefinitions.user_logs_in_with_no_login_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1296000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Login password are wrong message should be displayed",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.StepDefinitions.login_password_are_wrong_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@invalidLogin"
+          }
+        ]
+      }
+    ],
+    "name": "Login Test",
+    "description": "  Login Test",
+    "id": "login-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
