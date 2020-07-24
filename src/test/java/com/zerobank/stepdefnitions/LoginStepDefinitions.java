@@ -5,7 +5,7 @@ import com.zerobank.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
-public class StepDefinitions {
+public class LoginStepDefinitions {
     LoginPage loginPage = new LoginPage();
 
     @Given("user is on login page")
