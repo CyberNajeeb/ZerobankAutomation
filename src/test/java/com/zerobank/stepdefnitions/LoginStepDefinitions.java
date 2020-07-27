@@ -6,7 +6,13 @@ import io.cucumber.java.en.*;
 import org.junit.Assert;
 
 public class LoginStepDefinitions {
-    LoginPage loginPage = new LoginPage();
+    private final LoginPage loginPage;
+
+    public LoginStepDefinitions(LoginPage loginPage) {
+        this.loginPage = loginPage;
+    }
+
+//    LoginPage loginPage = new LoginPage();
 
     @Given("user is on login page")
     public void user_is_on_login_page() {
