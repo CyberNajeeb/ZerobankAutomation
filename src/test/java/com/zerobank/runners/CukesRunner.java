@@ -12,11 +12,12 @@ import java.io.File;
         glue = "com/zerobank/stepdefnitions",
         dryRun = false,
         strict = false,
-        tags = "@login",
+        tags = "@validLogin",
         plugin = "html:target/cucumber_html_reports"
 //                "json:target/cucumber_reports.json",
 //                "rerun:target/rerun.txt"
 
 )
 public class CukesRunner {
+
 }

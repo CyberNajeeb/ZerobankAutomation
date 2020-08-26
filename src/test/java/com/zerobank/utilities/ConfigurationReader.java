@@ -1,5 +1,6 @@
 package com.zerobank.utilities;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -9,7 +10,8 @@ public class ConfigurationReader {
     static {
         try {
             //location of properties file
-            String path = System.getProperty("user.dir")+"/configuration.properties";
+            //File.separator makes the code OS-independent.
+            String path = System.getProperty("user.dir") + File.separator + "configuration.properties";
             //get that file as a stream
             FileInputStream input = new FileInputStream(path);
             //create object of Properties class
@@ -27,10 +29,11 @@ public class ConfigurationReader {
 
     /**
      * This method returns property value from configuration.properties file
+     *
      * @param keyName property name
      * @return property value
      */
-    public static String getProperty(String keyName) {
+    public static String getPropertyFromPropertiesFile(String keyName) {
         return configFile.getProperty(keyName);
     }
 }

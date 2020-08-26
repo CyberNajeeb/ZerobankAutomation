@@ -8,11 +8,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends AbstractPageBase{
 
-    @FindBy(css = "[id='user_login']")
+    @FindBy(css = "#user_login")
     private WebElement username;
 //    public WebElement username2 = Driver.getDriver().findElement(By.id("prependedInput"));
 
-    @FindBy(css = "[id='user_password']")
+    @FindBy(css = "#user_password")
     private WebElement password;
 
     @FindBy(id = "_submit")
@@ -59,8 +59,8 @@ public class LoginPage extends AbstractPageBase{
      * Credentials will be retrieved from configuration.properties file
      */
     public void login() {
-        username.sendKeys(ConfigurationReader.getProperty("userName"));
-        password.sendKeys(ConfigurationReader.getProperty("password"), Keys.ENTER);
+        username.sendKeys(ConfigurationReader.getPropertyFromPropertiesFile("userName"));
+        password.sendKeys(ConfigurationReader.getPropertyFromPropertiesFile("password"), Keys.ENTER);
         BrowserUtilities.waitForPageToLoad(10);
         BrowserUtilities.wait(3);
     }
