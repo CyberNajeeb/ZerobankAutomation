@@ -26,7 +26,7 @@ public class LoginPageStepDefinition {
     public void account_summary_page_should_be_displayed() {
 
         String actualTitle = Driver.getDriver().getTitle();
-        String expectedTitle = "Zero - Account Summary";
+        String expectedTitle = "Zero - Account Summar";
         assertEquals(expectedTitle,actualTitle);
     }
 

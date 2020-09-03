@@ -2,9 +2,20 @@ package com.zerobank.pages;
 
 import com.zerobank.utilities.BrowserUtilities;
 import com.zerobank.utilities.ConfigurationReader;
+import org.junit.rules.Timeout;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.NoSuchElementException;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class LoginPage extends AbstractPageBase{
 
@@ -78,5 +89,16 @@ public class LoginPage extends AbstractPageBase{
         }
         System.out.println("Login as " + role);
         login(username, "UserUser123");
+        FluentWait webDriverWait = new FluentWait<>(driver);
+        webDriverWait.withTimeout(Duration.ofSeconds(5)).pollingEvery(1, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
+
+    }
+    public static boolean charz(String a, String b){
+        Map<Character, Integer> chars = new HashMap<>();
+        for (int i = 0; i < a.length(); i++) {
+            chars.put(a.charAt(i), 1);
+
+        }
+        return true;
     }
 }
