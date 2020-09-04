@@ -2,26 +2,21 @@ package com.zerobank.pages;
 
 import com.zerobank.utilities.BrowserUtilities;
 import com.zerobank.utilities.ConfigurationReader;
-import org.junit.rules.Timeout;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class LoginPage extends AbstractPageBase{
 
     @FindBy(css = "#user_login")
     private WebElement username;
-//    public WebElement username2 = Driver.getDriver().findElement(By.id("prependedInput"));
 
     @FindBy(css = "#user_password")
     private WebElement password;

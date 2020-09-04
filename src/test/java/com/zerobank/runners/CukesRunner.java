@@ -4,8 +4,6 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-import java.io.File;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources",
@@ -13,9 +11,11 @@ import java.io.File;
         dryRun = false,
         strict = false,
         tags = "@validLogin",
-        plugin = "html:target/cucumber_html_reports"
-//                "json:target/cucumber_reports.json",
-//                "rerun:target/rerun.txt"
+        plugin = {
+                "html:target/cucumber_html_reports",
+                "json:target/cucumber_reports.json",
+                "rerun:target/rerun.txt"
+        }
 
 )
 public class CukesRunner {
