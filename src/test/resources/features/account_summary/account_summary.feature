@@ -4,7 +4,7 @@ Feature: Account summary
 
   @account_summary
   Scenario: Account summary page should have <account types>:
-    Given user logs in with valid credentials
+    When user logs in with valid credentials
     Then user verifies the account summary has the following account_types
       | Cash Accounts       |
       | Investment Accounts |

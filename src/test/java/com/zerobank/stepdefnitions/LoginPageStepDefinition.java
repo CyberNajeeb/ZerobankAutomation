@@ -13,9 +13,9 @@ public class LoginPageStepDefinition {
     }
 
     @Given("user is on login page")
-    public void user_is_on_login_page() {
-        System.out.println("user is on the login page");
-    }
+//    public void user_is_on_login_page() {
+//        System.out.println("user is on the login page");
+//    }
 
     @When("user logs in with valid credentials")
     public void user_logs_in_with_valid_credentials() {
